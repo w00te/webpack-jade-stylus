@@ -1,5 +1,12 @@
-div
-  h1 My Title
-  p Hello World!
-  h2 Demo Header
-  p This is just a demo.
+div(ng-app="myApp" ng-controller="HomeController")
+  h1 Some constant title for all pages.
+  p Some text under the title on all pages.
+  ul
+    li
+      a(href="#/") Home
+    li
+      a(href="#/blog") Blog
+    li
+      a(href="#/about") About  
+
+  div(ng-view)
